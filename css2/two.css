@@ -1,0 +1,242 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+header {
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo img {
+  max-width: 80px;
+}
+header .container nav {
+}
+header .container nav ul {
+  display: flex;
+}
+header .container nav ul li {
+  padding: 60px 25px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+/* End Header */
+/* Start Landing */
+.landing .info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.landing .info h2 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #333;
+}
+.landing .info span {
+  font-size: 68px;
+  color: #017143;
+  font-weight: bolder;
+}
+.landing .info p {
+  max-width: 560px;
+  line-height: 1.6;
+  color: #333;
+}
+.landing .info button {
+  background-color: #017143;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.landing .green {
+  height: 651px;
+  background-color: #017143;
+  clip-path: circle(50% at 95% 97%);
+}
+.landing .box1 img {
+  position: absolute;
+  right: 190px;
+  bottom: 120px;
+  max-width: 340px;
+}
+.landing .box2 img {
+  position: absolute;
+  right: 190px;
+  bottom: 120px;
+  max-width: 340px;
+  display: none;
+}
+.landing .box3 img {
+  position: absolute;
+  right: 190px;
+  bottom: 120px;
+  max-width: 340px;
+  display: none;
+  transition: 0.3;
+}
+.options {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+.options .two {
+  margin: 0 30px;
+}
+.options img {
+  max-width: 60px;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.icons i {
+  margin: 10px;
+}
+.icons ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar {
+  display: none;
+}
+/* End Landing */
+/* Start Responsive Design */
+/* Medium */
+@media (max-width: 767px) {
+  .landing .green {
+    height: 103vh;
+    background-color: #017143;
+    clip-path: circle(40% at 50% 90%);
+  }
+  .landing .box1 img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -37px;
+    max-width: 250px;
+  }
+  .options {
+    position: absolute;
+    display: flex;
+    left: 52%;
+    transform: translateX(-50%);
+    bottom: -150px;
+  }
+  .landing .info {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  .landing .info h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #333;
+  }
+  .landing .info span {
+    font-size: 43px;
+    color: #017143;
+    font-weight: bolder;
+  }
+  .landing .info p {
+    max-width: 80%;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .landing .info button {
+    background-color: #017143;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .options img {
+    max-width: 50px;
+  }
+  .icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: #017143;
+  }
+  header .container nav ul {
+    display: none;
+  }
+  .bar {
+    font-size: 30px;
+    display: block;
+    margin: 60px 0 0;
+  }
+  header .container .logo {
+    margin: 60px 0 0;
+  }
+}
+
+/* End Responsive Design */
